@@ -1,0 +1,23 @@
+.header {
+    background-image: url(../../img/background/Camada1.png);
+    background-position: 0px -120px;
+    position: relative;
+}
+
+.header ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+.menu a{
+    color: var(--cor-5);
+}
+
+.header img {
+    display: block;
+    margin-left: 40px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}

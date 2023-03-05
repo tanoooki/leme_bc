@@ -1,0 +1,81 @@
+.especialidades-descricao {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
+    align-items: center;
+}
+
+.especialidades-descricao img {
+    max-width: 16px;
+    max-height: 16px;
+
+}
+
+.cabecalho {
+    margin-left: 40px;
+    padding-bottom: 20px;
+}
+
+
+
+.especialidades {
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+
+
+
+.especialidades p {
+    display: block;
+    background: #ffffff8a;
+    padding: 16px 20px;
+    max-width: 80ch;
+    border-radius: 0 0 5px 5px;
+    grid-column: 1/-1;
+}
+
+.especialidades-descricao {
+    margin-bottom: 20px;
+    background: #e4e4e49d;
+    max-width: 80ch;
+    border-radius: 5px;
+}
+
+.especialidades {
+    background: url(../img/background/[GetPaidStock.com]-6404dd7e42ad3.png) no-repeat top right ;
+    background-size: 20%;
+}
+
+.especialidades h2 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    grid-column: 1/-1;
+    margin: 10px 12px 0px 12px;
+}
+
+.especialidades h2::after {
+    content: "";
+    display: inline-block;
+    margin-right: 12px;
+    width: 14px;
+    height: 6px;
+    background: url(../img/icons/seta-abrir.svg);
+
+}
+
+@media (max-width: 1000px) {
+    .especialidades {
+        background: none;
+    }
+    .especialidades-descricao h2 {
+        font-size: 1.4rem;
+    }
+    .especialidades-descricao {
+        max-width: 100%;
+        margin: 20px;
+    }
+    .especialidades p {
+        max-width: 100%;
+    }
+}
