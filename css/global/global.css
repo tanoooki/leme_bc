@@ -4,9 +4,9 @@ body {
 }
 
 
-body, a, h1, h2, h3, li, p {
-    margin: 0;
-    
+body, a, h1, h2, h3, li, p, ul {
+    margin: 0px;
+    padding: 0px;
 }
 
 a {

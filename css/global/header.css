@@ -1,23 +1,48 @@
 .header {
     background-image: url(../../img/background/Camada1.png);
-    background-position: 0px -120px;
+    background-position: 0px -110px;
     position: relative;
+    display: grid;
+    padding-bottom: 60px;
 }
 
-.header ul {
+.menu-itens {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     list-style-type: none;
-    padding-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
 }
 
-.menu a{
-    color: var(--cor-5);
+
+
+.menu-texto {
+    padding: 12px 20px;
 }
 
 .header img {
     display: block;
-    margin-left: 40px;
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.cabecalho {
+    font: 600 2.6rem/1.125 "Poppins", sans-serif;
+}
+
+
+.header a {
+    justify-self: center;
+}
+
+@media (max-width: 800px) {
+    .menu-item {
+        background: #ffffff8a;;
+        border-radius: 5px;
+    }
+    .header {
+        padding-bottom: 20px;
+    }
+    
 }
