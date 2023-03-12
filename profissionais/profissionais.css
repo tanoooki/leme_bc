@@ -10,7 +10,8 @@
     background-size: contain ;
     background-repeat: no-repeat;
     padding-bottom: 4rem;
-
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .profissional {

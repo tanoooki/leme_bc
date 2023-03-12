@@ -4,6 +4,7 @@
     position: relative;
     display: grid;
     padding-bottom: 60px;
+    max-width: 100vw;
 }
 
 .menu-itens {
@@ -25,10 +26,6 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-}
-
-.cabecalho {
-    font: 600 2.6rem/1.125 "Poppins", sans-serif;
 }
 
 

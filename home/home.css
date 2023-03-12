@@ -1,0 +1,13 @@
+.home {
+    text-indent: 2ch;
+    max-width: 80ch;
+}
+
+.introducao {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.home h1 {
+    padding-bottom: 140px;
+}

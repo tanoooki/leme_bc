@@ -11,17 +11,7 @@
 
 }
 
-.cabecalho {
-    display: block;
-    max-width: 1200px;
-    margin-left: 0 auto;
-    padding-bottom: 20px;
-}
-
-
-
 .especialidades {
-    position: relative;
     padding-top: 20px;
     padding-bottom: 120px;
 }
@@ -37,12 +27,14 @@
 
 
 .especialidades p {
-    display: block;
+    display: none;
     background: #ffffff8a;
     padding: 16px 20px;
     max-width: 80ch;
     border-radius: 0 0 5px 5px;
     grid-column: 1/-1;
+    color: var(--cor-8);
+
 }
 
 .especialidades-descricao {
@@ -50,30 +42,30 @@
     background: #e4e4e49d;
     max-width: 80ch;
     border-radius: 5px;
+    position: relative;
 }
 
-.especialidades h2 {
+.especialidades button {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
     grid-column: 1/-1;
-    margin: 10px 12px 0px 12px;
+    border-radius: 5px 5px 0 0;
     cursor: pointer;
+    color: var(--cor-9);
+    border: none;
+    text-align: start;
+    padding: 16px 12px;
+    background-color: #e4e4e49d;
 }
 
-.especialidades h2::after {
-    content: "";
-    display: inline-block;
-    margin-right: 12px;
-    width: 14px;
-    height: 6px;
-    background: url(../img/icons/seta-abrir.svg);
 
+.seta {
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    transform: rotate(180deg);
 }
-
-/* .especialidades-descricao p {
-    display: none;
-} */
 
 
 @media (max-width: 1000px) {

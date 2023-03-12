@@ -4,8 +4,10 @@
 @import "./utilidades/tipografia";
 @import "./utilidades/cores.css";
 
+@import "../home/home.css";
 @import "../especialidades/especialidades.css";
 @import "../profissionais/profissionais.css";
 @import "../css/contato/contato.css";
+
 
 @import "../home/footer.css";
