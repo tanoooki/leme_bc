@@ -1,7 +1,6 @@
 .especialidades-descricao {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    gap: 12px;
     align-items: center;
 }
 
@@ -11,30 +10,36 @@
 
 }
 
+.cabecalho {
+    margin-left: 40px;
+    padding-bottom: 20px;
+}
+
+.especialidades p {
+    display: none;
+}
+
+.especialidades p.ativa {
+    display: block;
+}
+
 .especialidades {
     padding-top: 20px;
     padding-bottom: 120px;
 }
 
-.especialidades-bg {
-    position: absolute;
-    top: 100px;
-    right: 0px;
-    width: calc(50% - 350px);
-    height: calc(50% -387px);
-    max-width: 250px;
-}
 
 
 .especialidades p {
-    display: none;
     background: #ffffff8a;
     padding: 16px 20px;
     max-width: 80ch;
     border-radius: 0 0 5px 5px;
     grid-column: 1/-1;
-    color: var(--cor-8);
+}
 
+.transition { 
+    transition: 0.3s;
 }
 
 .especialidades-descricao {
@@ -42,7 +47,11 @@
     background: #e4e4e49d;
     max-width: 80ch;
     border-radius: 5px;
-    position: relative;
+}
+
+.especialidades {
+    background: url(../img/background/fundo_menino.png) no-repeat top right ;
+    background-size: 20%;
 }
 
 .especialidades button {
@@ -50,30 +59,42 @@
     grid-template-columns: 1fr auto;
     align-items: center;
     grid-column: 1/-1;
-    border-radius: 5px 5px 0 0;
-    cursor: pointer;
-    color: var(--cor-9);
     border: none;
     text-align: start;
-    padding: 16px 12px;
-    background-color: #e4e4e49d;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+}
+
+.especialidades button:hover{
+    background: #eeeeee85;
+    color: var(--cor-10)
+}
+
+.especialidades button::after {
+    content: "";
+    display: inline-block;
+    margin-right: 12px;
+    width: 14px;
+    height: 6px;
+    background: url(../img/icons/seta-abrir.svg);
+    transition: .3s;
 }
 
 
-.seta {
-    position: absolute;
-    right: 15px;
-    top: 30px;
+
+.especialidades button:hover::after, .especialidades button[aria-expanded="true"]::after {
     transform: rotate(180deg);
 }
-
 
 @media (max-width: 1000px) {
     .especialidades {
         background: none;
     }
-    .especialidades-descricao h2 {
+    .especialidades-descricao button {
         font-size: 1.4rem;
+        padding: 12px 0px 12px 10px;
     }
     .especialidades-descricao {
         max-width: 100%;
@@ -81,8 +102,5 @@
     }
     .especialidades p {
         max-width: 100%;
-    }
-    .especialidades-bg {
-        display: none;
     }
 }

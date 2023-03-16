@@ -4,8 +4,9 @@ body {
 }
 
 
-body, a, h1, h2, h3, li, p, ul {
-    margin: 0px;
+body, a, h1, h2, h3, li, p {
+    margin: 0;
+    
 }
 
 a {
@@ -15,20 +16,11 @@ a {
 
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100vw;
     box-sizing: border-box;
     padding-left:  20px;
     padding-right:  20px;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-}
-
-.cabecalho {
-    font: 600 2.6rem/1.125 "Poppins", sans-serif;
-    display: block;
-    max-width: 1200px;
-    margin-left: 0 auto;
-    padding-bottom: 60px;
 }

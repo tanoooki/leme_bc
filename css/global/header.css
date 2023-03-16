@@ -1,46 +1,23 @@
 .header {
     background-image: url(../../img/background/Camada1.png);
-    background-position: 0px -110px;
+    background-position: 0px -120px;
     position: relative;
-    display: grid;
-    padding-bottom: 60px;
-    max-width: 100vw;
 }
 
-.menu-itens {
+.header ul {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     list-style-type: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0px;
+    padding-bottom: 20px;
 }
 
-
-
-.menu-texto {
-    padding: 12px 20px;
+.menu a{
+    color: var(--cor-5);
 }
 
 .header img {
     display: block;
+    margin-left: 40px;
     padding-top: 32px;
     padding-bottom: 32px;
-}
-
-
-.header a {
-    justify-self: center;
-    padding-top: 20px;
-}
-
-@media (max-width: 800px) {
-    .menu-item {
-        background: #ffffff8a;;
-        border-radius: 5px;
-    }
-    .header {
-        padding-bottom: 20px;
-    }
-    
 }
