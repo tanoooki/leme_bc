@@ -4,7 +4,7 @@ body {
 }
 
 
-body, a, h1, h2, h3, li, p {
+body, a, h1, h2, h3, li, p, ul, li {
     margin: 0;
     
 }
@@ -16,11 +16,17 @@ a {
 
 
 .container {
-    max-width: 100vw;
+    max-width: 1200px;
     box-sizing: border-box;
     padding-left:  20px;
     padding-right:  20px;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
+}
+
+
+.cabecalho {
+    padding-bottom: 20px;
 }

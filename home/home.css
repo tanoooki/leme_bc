@@ -1,13 +1,35 @@
 .home {
-    text-indent: 2ch;
-    max-width: 80ch;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    padding-left: 32px;
+    margin: 0 auto;
+
 }
 
 .introducao {
     margin-bottom: 12px;
     text-align: justify;
+    text-indent: 4ch;
+    max-width: 80ch;
 }
 
-.home h1 {
-    padding-bottom: 140px;
+.capa {
+    padding-left: 40px;
+}
+
+.home img {
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+    width: auto;
+}
+
+@media (max-width: 1000px) {
+    .home {
+        grid-template-columns: auto;
+    }
+    .home img {
+        padding-bottom: 30px;
+    }
 }
