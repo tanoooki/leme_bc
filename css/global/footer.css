@@ -38,6 +38,7 @@
     font-size: 1.7rem;
     font-family: "Roboto";
     text-align: right;
+    align-self: center;
 }
 
 .endereco h2 {

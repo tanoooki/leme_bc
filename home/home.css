@@ -1,3 +1,9 @@
+body {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
 .home {
     display: grid;
     grid-template-columns: auto auto;
@@ -6,6 +12,7 @@
     margin: 0 auto;
 
 }
+
 
 .introducao {
     margin-bottom: 12px;
@@ -25,6 +32,26 @@
     width: auto;
 }
 
+.galeriaImagens {
+    display: flex;
+    overflow-x: auto;
+    gap: 4px;
+    padding-left: 0px;
+}
+
+.galeriaImagens img{
+    max-height: 250px;
+    opacity: 0.8;
+}
+
+.galeriaImagens img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
 @media (max-width: 1000px) {
     .home {
         grid-template-columns: auto;
@@ -33,3 +60,46 @@
         padding-bottom: 30px;
     }
 }
+
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    padding-top: 20px;
+}
+
+.modal_background {
+    padding: 24px;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.display_none {
+    display: none;
+}
+
+.fechar {
+    position: absolute;
+    border-radius: 4px;
+    border: 1px rgb(189, 189, 189) solid;
+    right: 24px;
+}
+
+.imagens_modal img {
+    border-radius: 8px;
+}
+
+.imagens_modal li {
+    
+    text-align: center;
+}
+

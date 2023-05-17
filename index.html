@@ -34,9 +34,20 @@
         </div>
             <img src="./img/image/recepcao.jpg" width="527" height="702" alt="Foto da recepção">
     </article>
-    <article>
+    <article class="galeria">
         <h1 class="capa cabecalho font-1-xl cor-4">Conheça nosso ambiente</h1>
+        <ul class="galeriaImagens">
+            <li id="gallery-1"><img onclick="toggleAtivo(1)" src="./img/image/recepcao2.webp" alt="Foto da recepção"></li>
+            <li id="gallery-2"><img onclick="toggleAtivo(2)" src="./img/image/parque.webp" alt="Foto do parque sensorial"></li>
+            <li id="gallery-3"><img onclick="toggleAtivo(3)" src="./img/image/parque_escalada.webp" alt=""></li>
+            <li id="gallery-4"><img onclick="toggleAtivo(4)" src="./img/image/parque_piscina.webp" alt=""></li>
+            <li id="gallery-5"><img onclick="toggleAtivo(5)" src="./img/image/parque_painel_sensorial.webp" alt=""></li>
+            <li id="gallery-6"><img onclick="toggleAtivo(6)" src="./img/image/parque_integracao_sensorial.webp" alt=""></li>
+            <li id="gallery-7"><img onclick="toggleAtivo(7)" src="./img/image/sala_terapia_ocupacional.webp" alt=""></li>
+            <li id="gallery-8"><img onclick="toggleAtivo(7)" src="./img/image/sala_terapia_ocupacional2.webp" alt=""></li>
+            <li id="gallery-9"><img onclick="toggleAtivo(7)" src="./img/image/sala_terapia_ocupacional3.webp" alt=""></li>
 
+        </ul>
     </article>
     </main>
     <footer class="rodape">
@@ -53,12 +64,30 @@
                 <p>Para mais informações envie um e-mail para <a href="mailto:contato@lemebc.com?subject=Contato via site" target="_blank">contato@lemebc.com</a></p>
             </div>
         <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3990.6142254348256!2d-48.64234467635814!3d-26.99117440540887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b5b92645b747%3A0xb57d3690e23c3b5d!2sLeme%20-%20Centro%20de%20Desenvolvimento%20Infanto-juvenil%20%7C%20Especialistas%20em%20Autismo!5e0!3m2!1spt-BR!2sus!4v1684271839293!5m2!1spt-BR!2sus" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3990.6142254348256!2d-48.64234467635814!3d-26.99117440540887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b5b92645b747%3A0xb57d3690e23c3b5d!2sLeme%20-%20Centro%20de%20Desenvolvimento%20Infanto-juvenil%20%7C%20Especialistas%20em%20Autismo!5e0!3m2!1spt-BR!2sus!4v1684271839293!5m2!1spt-BR!2sus" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
         </div>
 
         </div>
         <span>Produzido por Tanoooki. Todos direitos reservados.</span>
     </footer>
+    <div id="modal" class="display_none">
+        <div class="modal_background">
+            <button class="fechar" onclick="closeModal()">X</button>
+            <div class="imagens_modal">
+                <li id="galeria-1" class="display_none font-1-m"><img onclick="toggleAtivo(1)" src="./img/image/recepcao2.webp" alt="Foto da recepção"><br>Recepção</li>
+                <li id="galeria-2" class="display_none font-1-m"><img onclick="toggleAtivo(2)" src="./img/image/parque.webp" alt="Foto do parque sensorial"></li>
+                <li id="galeria-3" class="display_none font-1-m"><img onclick="toggleAtivo(3)" src="./img/image/parque_escalada.webp" alt=""></li>
+                <li id="galeria-4" class="display_none font-1-m"><img onclick="toggleAtivo(4)" src="./img/image/parque_piscina.webp" alt=""></li>
+                <li id="galeria-5" class="display_none font-1-m"><img onclick="toggleAtivo(5)" src="./img/image/parque_painel_sensorial.webp" alt=""></li>
+                <li id="galeria-6" class="display_none font-1-m"><img onclick="toggleAtivo(6)" src="./img/image/parque_integracao_sensorial.webp" alt=""></li>
+                <li id="galeria-7" class="display_none font-1-m"><img onclick="toggleAtivo(7)" src="./img/image/sala_terapia_ocupacional.webp" alt=""><br>Sala - Terapia Ocupacional</li>
+                <li id="galeria-8" class="display_none font-1-m"><img onclick="toggleAtivo(8)" src="./img/image/sala_terapia_ocupacional2.webp" alt=""><br>Sala - Terapia Ocupacional</li>
+                <li id="galeria-9" class="display_none font-1-m"><img onclick="toggleAtivo(9)" src="./img/image/sala_terapia_ocupacional3.webp" alt=""><br>Sala - Terapia Ocupacional</li>
+            </div>
+        </div>
+    </div>
+    
+    <div>
     <script src="./home/home.js"></script>
 </body>
 </html>
