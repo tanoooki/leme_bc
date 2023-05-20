@@ -76,6 +76,7 @@
     color: var(--cor-5);
     text-align: start;
     overflow:scroll;
+
 }
 .curriculo h1 {
     padding-bottom: 1.5rem;
@@ -93,6 +94,7 @@
 .curriculo ul {
     max-height: 500px;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .foto-prof-cert{

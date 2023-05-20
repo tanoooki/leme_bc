@@ -80,4 +80,5 @@ body::-webkit-scrollbar-thumb {
     background: white;
     border-radius: 10px;
     position: relative;
+    max-width: 1200px;
 }
