@@ -1,4 +1,5 @@
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,82 +8,215 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="topo">
         <div class="logo">
             <a href="./index.html"><img class="leme" src="./img/Leme.webp" alt="logo da leme"></a>
         </div>
         <div class="menu header font-2-l-b cor-2">
-        <ul>
-            <li class="menu-item"><a class="menu-texto" href="./index.html">Home</a></li>
-            <li class="menu-item"><a class="menu-texto" href="./especialidades.html">Especialidades</a></li>
-            <li class="menu-item"><a class="menu-texto" href="./equipe.html">Profissionais</a></li>
-            <li class="menu-item"><a class="menu-texto" href="contato.html">Contato</a></li>
-        </ul>
-       </div>
+            <ul>
+                <li class="menu-item"><a class="menu-texto" href="./index.html">Home</a></li>
+                <li class="menu-item"><a class="menu-texto" href="./especialidades.html">Especialidades</a></li>
+                <li class="menu-item"><a class="menu-texto" href="./equipe.html">Profissionais</a></li>
+                <li class="menu-item"><a class="menu-texto" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
     </header>
     <article class="container">
         <div>
             <h1 class="cabecalho font-1-xl cor-4">Nossa Equipe</h1>
         </div>
-    <div class="equipe">
-    <a href="./src/clarissa.html" class="profissa">
-        <div class="profissional">
-        <img class="foto-prof" src="./img/profissionais/Clarissa.webp" alt="Foto Clarissa Vargas">
-        <h2 class="nome font-1-l">Clarissa Vargas</h2>
-        <span class="profissao font-1-m">Terapeuta Ocupacional</span>
-        <span class="font-2-xs">CREFITO-10/13504-TO</span>
-    </div>
-</a>
-    <div class="profissional">
-        <img class="foto-prof" src="./img/profissionais/Bruno.webp" alt="Foto Bruno Carneiro">
-        <h2 class="nome font-1-l">Bruno Carneiro</h2>
-        <span class="profissao font-1-m">Psicólogo</span>
-        <span class="font-2-xs">CRP-12/19353</span>
-    </div>
-    <div class="profissional">
-        <img class="foto-prof" src="./img/profissionais/Juliane.webp" alt="Foto Juliane Schritke">
-        <h2 class="nome font-1-l">Juliane Schritke</h2>
-        <span class="profissao font-1-m">Terapeuta Ocupacional</span>
-        <span class="font-2-xs">CREFITO-10/15395-TO</span>
-    </div>
-    <div class="profissional">
-        <img class="foto-prof" src="./img/profissionais/Paula.webp" alt="Foto Paula Ruschmann">
-        <h2 class="nome font-1-l">Paula Ruschmann</h2>
-        <span class="profissao font-1-m">Fonoaudióloga</span>
-        <span class="font-2-xs">CRFA-3 7359</span>
-    </div>
-    <div class="profissional">
-        <img class="foto-prof" src="./img/profissionais/Isabella.webp" alt="Foto Isabella Rodrigues">
-        <h2 class="nome font-1-l">Isabella Rodrigues</h2>
-        <span class="profissao font-1-m">Terapeuta Ocupacional</span>
-        <span class="font-2-xs">CREFITO-10/23568-TO</span>
-    </div>
-    <div class="profissional">
-        <img class="foto-prof" src="./img/profissionais/Lucia.webp" alt="Foto Lúcia Zanetti">
-        <h2 class="nome font-1-l">Lúcia Zanetti</h2>
-        <span class="profissao font-1-m">Psicóloga</span>
-        <span class="font-2-xs">CRP-12/19353</span>
-    </div>
-    <div class="profissional">
-        <img class="foto-prof" src="./img/profissionais/Didi.webp" alt="Foto Dionessa Bazana">
-        <h2 class="nome font-1-l">Dionessa Bazana</h2>
-        <span class="profissao font-1-m">Pedagoga</span>
-    </div>
-    <div class="profissional">
-        <img class="foto-prof" src="./img/profissionais/Priscila.webp" alt="Foto Priscila Magalhães">
-        <h2 class="nome font-1-l">Priscila Magalhães</h2>
-        <span class="profissao font-1-m">Nutricionista</span>
-        <span class="font-2-xs">CRN10-7893</span>
-    </div>
-</div>
-</article>
+        <div class="equipe">
+            <div onclick="toggleAtivo(1)">
+                <div class="profissional">
+                    <img class="foto-prof" src="./img/profissionais/Clarissa.webp" alt="Foto Clarissa Vargas">
+                    <h2 class="nome font-1-l">Clarissa Vargas</h2>
+                    <div class="info-prof aparece" id="prof-1">
+                        <span class="profissao font-1-m">Terapeuta Ocupacional</span>
+                        <span class="font-2-xs"><br>CREFITO-10/13504-TO</span>
+                    </div>
+                    <div id="profi-2" class="info-prof-2">
+                        <span class="esconder">Teste</span>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="toggleAtivo(2)">
+            <div>
+                <div id="cur-2" class="profissional">
+                    <img class="foto-prof" src="./img/profissionais/Bruno.webp" alt="Foto Bruno Carneiro">
+                    <h2 class="nome font-1-l">Bruno Carneiro</h2>
+                    <div class="info-prof aparece" id="prof-2">
+                        <span class="profissao font-1-m">Psicólogo</span>
+                        <span class="font-2-xs">CRP-12/19353</span>
+                    </div>
+                    <div class="info-prof-2">
+                        <span class="esconder">Teste</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div onclick="toggleAtivo(3)">
+            <div id="cur-3" class="profissional">
+                <img class="foto-prof" src="./img/profissionais/Juliane.webp" alt="Foto Juliane Schritke">
+                <h2 class="nome font-1-l">Juliane Schritke</h2>
+                <span class="profissao font-1-m">Terapeuta Ocupacional</span>
+                <span class="font-2-xs">CREFITO-10/15395-TO</span>
+            </div>
+            </div>
+
+            <div class="profissional">
+                <img class="foto-prof" src="./img/profissionais/Paula.webp" alt="Foto Paula Ruschmann">
+                <h2 class="nome font-1-l">Paula Ruschmann</h2>
+                <span class="profissao font-1-m">Fonoaudióloga</span>
+                <span class="font-2-xs">CRFA-3 7359</span>
+            </div>
+            <div class="profissional">
+                <img class="foto-prof" src="./img/profissionais/Isabella.webp" alt="Foto Isabella Rodrigues">
+                <h2 class="nome font-1-l">Isabella Rodrigues</h2>
+                <span class="profissao font-1-m">Terapeuta Ocupacional</span>
+                <span class="font-2-xs">CREFITO-10/23568-TO</span>
+            </div>
+            <div class="profissional">
+                <img class="foto-prof" src="./img/profissionais/Lucia.webp" alt="Foto Lúcia Zanetti">
+                <h2 class="nome font-1-l">Lúcia Zanetti</h2>
+                <span class="profissao font-1-m">Psicóloga</span>
+                <span class="font-2-xs">CRP-12/19353</span>
+            </div>
+            <div class="profissional">
+                <img class="foto-prof" src="./img/profissionais/Didi.webp" alt="Foto Dionessa Bazana">
+                <h2 class="nome font-1-l">Dionessa Bazana</h2>
+                <span class="profissao font-1-m">Pedagoga</span>
+            </div>
+            <div class="profissional">
+                <img class="foto-prof" src="./img/profissionais/Priscila.webp" alt="Foto Priscila Magalhães">
+                <h2 class="nome font-1-l">Priscila Magalhães</h2>
+                <span class="profissao font-1-m">Nutricionista</span>
+                <span class="font-2-xs">CRN10-7893</span>
+            </div>
+        </div>
+    </article>
 
 
-<footer class="rodape">
-    <span>Produzido por Tanoooki. Todos direitos reservados.</span>
-</footer>
+    <footer class="rodape">
+        <div class="info">
+            <div class="endereco">
+                <div>
+                    <h2>ONDE ESTAMOS</h2>
+                    <p>Rua 600, 488</p>
+                    <p>Balneário Camboriú</p>
+                </div>
+                <h2>INFORMAÇÕES</h2>
+                <p>Horário de funcionamento:</p>
+                <p>De segunda à sexta das 08h às 18h</p>
+                <p>Para mais informações envie um e-mail para <a
+                        href="mailto:contato@lemebc.com?subject=Contato via site" target="_blank">contato@lemebc.com</a>
+                </p>
+            </div>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3990.6142254348256!2d-48.64234467635814!3d-26.99117440540887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b5b92645b747%3A0xb57d3690e23c3b5d!2sLeme%20-%20Centro%20de%20Desenvolvimento%20Infanto-juvenil%20%7C%20Especialistas%20em%20Autismo!5e0!3m2!1spt-BR!2sus!4v1684271839293!5m2!1spt-BR!2sus"
+                    width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
+        </div>
+        <span>Produzido por Tanoooki. Todos direitos reservados.</span>
+
+        <div class="curriculo-geral">
+            <div class="curriculo modal display_none" id="modal-1">
+                <div class="modal_background">
+                    <button class="fechar" onclick="closeModal(1)">X</button>
+                    <h1 class="font-1-xl">Clarissa Vargas Maciel</h1>
+                    <span>Terapeuta Ocupacional<br>CREFITO-10/13504-TO</span>
+                    <h2 class="certificado font-1-xl">Certificados</h2>
+                    <ul>
+                        <li>Graduação em Terapia Ocupacional pela UFPR em 2010</li>
+                        <li>Aperfeiçoamento profissional em terapia ocupacional para disfunções físicas com enfoque
+                            multidisciplinar na Aacd Ibirapuera - SP 2011</li>
+                        <li>Extensão Neuropsicologia: Emoção e Cognição - Fundamentos Teóricos e Estudos Clínicos,
+                            COGEAE PUC SP. 2011. Com duração de 30h.</li>
+                        <li>Conceito Neuroevolutivo Bobath Básico pela ABRADIMINE 2014</li>
+                        <li>Curso Oficial da Associação Internacional Kinesio Taping - fundamentos e avançado. 2014.
+                        </li>
+                        <li>Pós Graduação em Terapia Ocupacional em reabilitação de membros superiores e terapia da mão-
+                            Faculdade Inspirar 2016</li>
+                        <li>Certificação Internacional em Integração Sensorial de Ayres, 2017. CLASI CASI #343.</li>
+                        <li>Curso Introdutório do Modelo de Intervenção Precoce de Denver, com Thiago Lopes. 2017</li>
+                        <li>Workshop Hands-on: materiais e modelos de motor fino para intervenção na escrita”, com Susan
+                            Trautman, 2018.</li>
+                        <li>Capacitação para Implementadores/ aplicadores em Análise do Comportamento Aplicada, com
+                            Ricardo e Carolina Martone, 2018.</li>
+                        <li>Treinamento e aplicação da Escala de desenvolvimento do bebê e da criança pequena Bayley
+                            III, com Vanessa Madaschi, 2018.</li>
+                        <li>Curso “Integração Sensorial com bebês: apoiando o desenvolvimento de bebês e crianças
+                            através da ISA”, com Susanne Smith Roley, 2018.</li>
+                        <li>Curso “Alterações sensoriais na alimentação no Transtorno do Espectro Autista”, com Marcos
+                            Chiang, 2019.</li>
+                        <li>Curso “Avaliação do bebê e da criança com deficiência visual”, com Maria Emília Briant e
+                            Giovana Martini, 2019.</li>
+                        <li>Curso “Práxis e Integração Sensorial”, com Marcos Chiang, 2019.</li>
+                        <li>Curso “Neuropsicomotricidade e autismo”, com Vitor da Fonseca, 2019.</li>
+                        <li>Curso “Promovendo a Participação de crianças com autismo: um guia clínico para implementar
+                            Integração Sensorial de Ayres”, com Roseann Schaaf, 2019.</li>
+                        <li>Curso “Raciocínio clínico em neurociência avançada em Integração Sensorial de Ayres”, com
+                            Shelly Lane, 2020.</li>
+                        <li>Curso “Interocepção, oitavo sentido: impacto na auto regulação”, com Kelly Mahler, 2020.
+                        </li>
+                        <li>Curso “O papel do terapeuta ocupacional no tratamento de problemas de continência fecal e
+                            rejeição do uso do banheiro e problemas de recusa e seletividade alimentar na criança:
+                            introdução e tratamento, com Isabelle Beaudry Bellefeuille, 2020.</li>
+                        <li>Curso “Fundamentos da Intervenção na Práxis para Crianças com Autismo”, com Teresa May –
+                            Bason, 2020.</li>
+                        <li>Curso “intervenção avançada para práxis ideacional- possibilidades para funções executivas”,
+                            com Teresa May – Bason, 2020.</li>
+                        <li>Curso “Raciocínio Clínico Avançado e Planejamento de Tratamento para Intervenção na Práxis”,
+                            com Teresa May – Bason, 2020.</li>
+                        <li>Star Institute For Sensory Processing - Certificate of Attendence & Advanced Intensive
+                            Mentorship level 1 - Clinical Reasoning in Intervention - Junho 2021</li>
+                        <li>Pós Graduação em Tratamento no Transtorno do Espectro Autista, Concluído em 2022</li>
+                        <li>International Ayres Sensory Integration Annual Congress, ISIC USA, 2022</li>
+                        <img class="foto-prof-cert" src="./img/profissionais/Clarissa.webp" alt="Foto Clarissa Vargas">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="curriculo modal display_none" id="modal-2">
+                <div class="modal_background">
+                    <button class="fechar" onclick=" closeModal(2)">X</button>
+                    <h1 class="font-1-xl">Bruno Carneiro</h1>
+                    <span>Terapeuta Ocupacional<br>CREFITO-10/13504-TO</span>
+                    <h2 class="certificado font-1-xl">Certificados</h2>
+                    <ul>
+                        <li>Graduação em Terapia Ocupacional pela UFPR em 2010</li>
+
+                        <img class="foto-prof-cert" src="./img/profissionais/Bruno.webp" alt="Foto Clarissa Vargas">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="curriculo modal display_none" id="modal-3">
+                <div class="modal_background">
+                    <button class="fechar" onclick=" closeModal(3)">X</button>
+                    <h1 class="font-1-xl">Juliane</h1>
+                    <span>Terapeuta Ocupacional<br>CREFITO-10/13504-TO</span>
+                    <h2 class="certificado font-1-xl">Certificados</h2>
+                    <ul>
+                        <li>Graduação em Terapia Ocupacional pela UFPR em 2010</li>
+
+                        <img class="foto-prof-cert" src="./img/profissionais/Juliane.webp" alt="Foto Clarissa Vargas">
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+
+    </footer>
+    <script src="./profissionais/profissionais.js"></script>
 </body>

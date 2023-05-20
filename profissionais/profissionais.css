@@ -20,7 +20,9 @@
     border-radius: 6px;
     place-items: center;
     background: #ffffff8a;
+    cursor: pointer;
 }
+
 
 .nome{
     background: rgb(210, 233, 232,0.5);
@@ -46,6 +48,57 @@
     border: 3px solid #d2e9e8;
 }
 
+
+
 .seta {
     color: aqua;
 }
+
+.info-prof {
+    text-align: center;
+}
+
+.curriculo {
+    text-align: center;
+}
+
+.aparece {
+    display: block;
+}
+
+.esconder {
+    display: none;
+}
+
+
+
+.curriculo {
+    color: var(--cor-5);
+    text-align: start;
+    overflow:scroll;
+}
+.curriculo h1 {
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+.curriculo h2 {
+    padding-bottom: 2.4rem;
+    padding-top: 1.5rem;
+}
+.curriculo li {
+    padding-bottom: .3rem;
+    list-style: disc;
+}
+
+.curriculo ul {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.foto-prof-cert{
+    position: absolute;
+    top: 1.5rem;
+    right: 70px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.055);
+}
+

@@ -39,6 +39,7 @@
     font-family: "Roboto";
     text-align: right;
     align-self: center;
+    color: var(--cor-8)
 }
 
 .endereco h2 {
