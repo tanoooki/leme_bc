@@ -89,6 +89,7 @@
 .curriculo li {
     padding-bottom: .3rem;
     list-style: disc;
+    padding-right: 10px;
 }
 
 .curriculo ul {
