@@ -35,17 +35,6 @@ const curriculoArray = Array.from(curriculo);
 
 
 function toggleAtivo(item){
-
-    for(let i=1; i <= curriculoArray.length; i++) {
-        const curriculoSelecionado = document.getElementById("prof-"+ i);
-        if(i === item) {
-            curriculoSelecionado.classList.add('ativo');
-        }
-        else{
-            curriculoSelecionado.classList.remove('ativo');
-        }
-    }
-
     const modal = document.getElementById('modal-'+item);
     modal.classList.remove('display_none');
     modal.classList.add('modal');

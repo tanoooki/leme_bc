@@ -82,3 +82,10 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     max-width: 1200px;
 }
+
+
+.mapa {
+    border-radius: 20px;
+    padding-right:  20px;
+    
+}

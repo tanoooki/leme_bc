@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap"
         rel="stylesheet">
+        <link rel="shortcut icon" href="./img/image/favicon.ico">
 </head>
 
 <body>
@@ -29,20 +30,18 @@
     </header>
     <article class="container">
         <div>
-            <h1 class="cabecalho font-1-xl cor-4">Nossa Equipe</h1>
+            <h1 class="cabecalho font-1-xl cor-4 extra">Nossa Equipe</h1>
         </div>
         <div class="equipe">
             <div onclick="toggleAtivo(1)">
                 <div class="profissional">
                     <img class="foto-prof" src="./img/profissionais/Clarissa.webp" alt="Foto Clarissa Vargas">
                     <h2 class="nome font-1-l">Clarissa Vargas</h2>
-                    <div class="info-prof aparece" id="prof-1">
+                    <div>
                         <span class="profissao font-1-m">Terapeuta Ocupacional</span>
-                        <span class="font-2-xs"><br>CREFITO-10/13504-TO</span>
+                        <span class="font-2-xs">CREFITO-10/13504-TO</span>
                     </div>
-                    <div id="profi-2" class="info-prof-2">
-                        <span class="esconder">Teste</span>
-                    </div>
+
                 </div>
             </div>
 
@@ -51,13 +50,11 @@
                     <div id="cur-2" class="profissional">
                         <img class="foto-prof" src="./img/profissionais/Bruno.webp" alt="Foto Bruno Carneiro">
                         <h2 class="nome font-1-l">Bruno Carneiro</h2>
-                        <div class="info-prof aparece" id="prof-2">
+                        <div>
                             <span class="profissao font-1-m">Psicólogo</span>
                             <span class="font-2-xs">CRP-12/19353</span>
                         </div>
-                        <div class="info-prof-2">
-                            <span class="esconder">Teste</span>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -66,8 +63,10 @@
                 <div id="cur-3" class="profissional">
                     <img class="foto-prof" src="./img/profissionais/Juliane.webp" alt="Foto Juliane Schritke">
                     <h2 class="nome font-1-l">Juliane Schritke</h2>
-                    <span class="profissao font-1-m">Terapeuta Ocupacional</span>
-                    <span class="font-2-xs">CREFITO-10/15395-TO</span>
+                    <div>
+                        <span class="profissao font-1-m">Terapeuta Ocupacional</span>
+                        <span class="font-2-xs">CREFITO-10/15395-TO</span>
+                    </div>
                 </div>
             </div>
 
@@ -75,8 +74,10 @@
                 <div class="profissional">
                     <img class="foto-prof" src="./img/profissionais/Paula.webp" alt="Foto Paula Ruschmann">
                     <h2 class="nome font-1-l">Paula Ruschmann</h2>
-                    <span class="profissao font-1-m">Fonoaudióloga</span>
-                    <span class="font-2-xs">CRFA-3 7359</span>
+                    <div>
+                        <span class="profissao font-1-m">Fonoaudióloga</span>
+                        <span class="font-2-xs">CRFA-3 7359</span>
+                    </div>
                 </div>
             </div>
 
@@ -84,16 +85,20 @@
                 <div class="profissional">
                     <img class="foto-prof" src="./img/profissionais/Isabella.webp" alt="Foto Isabella Rodrigues">
                     <h2 class="nome font-1-l">Isabella Rodrigues</h2>
-                    <span class="profissao font-1-m">Terapeuta Ocupacional</span>
-                    <span class="font-2-xs">CREFITO-10/23568-TO</span>
+                    <div>
+                        <span class="profissao font-1-m">Terapeuta Ocupacional</span>
+                        <span class="font-2-xs">CREFITO-10/23568-TO</span>
+                    </div>
                 </div>
             </div>
             <div onclick="toggleAtivo(6)">
                 <div class="profissional">
                     <img class="foto-prof" src="./img/profissionais/Lucia.webp" alt="Foto Lúcia Zanetti">
                     <h2 class="nome font-1-l">Lúcia Zanetti</h2>
-                    <span class="profissao font-1-m">Psicóloga</span>
-                    <span class="font-2-xs">CRP-12/19353</span>
+                    <div>
+                        <span class="profissao font-1-m">Psicóloga</span>
+                        <span class="font-2-xs">CRP-12/19353</span>
+                    </div>
                 </div>
             </div>
 
@@ -101,7 +106,9 @@
                 <div class="profissional">
                     <img class="foto-prof" src="./img/profissionais/Didi.webp" alt="Foto Dionessa Bazana">
                     <h2 class="nome font-1-l">Dionessa Bazana</h2>
-                    <span class="profissao font-1-m">Pedagoga</span>
+                    <div>
+                        <span class="profissao font-1-m">Pedagoga<br> ­</span>
+                    </div>
                 </div>
             </div>
 
@@ -109,8 +116,10 @@
                 <div class="profissional">
                     <img class="foto-prof" src="./img/profissionais/Priscila.webp" alt="Foto Priscila Magalhães">
                     <h2 class="nome font-1-l">Priscila Magalhães</h2>
-                    <span class="profissao font-1-m">Nutricionista</span>
-                    <span class="font-2-xs">CRN10-7893</span>
+                    <div>
+                        <span class="profissao font-1-m">Nutricionista</span>
+                        <span class="font-2-xs">CRN10-7893</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,7 +142,7 @@
                 </p>
             </div>
             <div class="mapa">
-                <iframe
+                <iframe class="mapa"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3990.6142254348256!2d-48.64234467635814!3d-26.99117440540887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b5b92645b747%3A0xb57d3690e23c3b5d!2sLeme%20-%20Centro%20de%20Desenvolvimento%20Infanto-juvenil%20%7C%20Especialistas%20em%20Autismo!5e0!3m2!1spt-BR!2sus!4v1684271839293!5m2!1spt-BR!2sus"
                     width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -260,23 +269,43 @@
                             horária 8 horas</li>
                         <li>Participante do II Congresso Internacional CENEP e VII Jornada de Neurociencias</li>
                         <li>CENEP (Centro de Neuropediatria da UFPR) – CENEP 20 anos, 33h, 2019</li>
-                        <li>Workshop Hands-On: Materiais e Modelos de Motor Fino para Intervenção na Escrita com Susan Trautman MA, OTR/L SWC e Lisa Johnson MA, OTR/L, 2018</li>
-                        <li>Certificate Program in Ayres Sensory Integration – Module 1: Neuroscience and Knowledge and Skill in Ayre Sensory Integration Theory Introductor – 42 hours - Rosean Schaaf, PHD, OTR/L.FAOTA and Susan Smith Roley, OTD, OTR, FAOTA, março 2019</li>
-                        <li>Certificate Program in Ayres Sensory Integration – Module 2:Comprehensive Assessment in ASI – 30 hours; Rosean Schaaf, PHD, OTR/L.FAOTA and Susan Smith Roley, OTD, OTR, FAOTA, maio 2019</li>
-                        <li>Certificate Program in Ayres Sensory Integration – Module 3:Comprehensive Assessment in ASI Theory – 32 hours; Rosean Schaaf, PHD, OTR/L.FAOTA and Susan Smith Roley, OTD, OTR, FAOTA, junho 2019</li>
-                        <li>Certificate Program in Ayres Sensory Integration – Module 4:Clinical Reasoning in Ayres Sensory Integration Theory Introductor – 35 hours; Rosean Schaaf, PHD, OTR/L.FAOTA and Susan Smith Roley, OTD, OTR, FAOTA, novembro 2019</li>
-                        <li>Certificate Program in Ayres Sensory Integration – Module 5:Evidence Based Intervention Including Fidelity to Intervention – 30 hours; Rosean Schaaf, PHD, OTR/L.FAOTA and Susan Smith Roley, OTD, OTR, FAOTA, novembro 2019</li>
-                        <li>Certificate Program in Ayres Sensory Integration – Module 6:Ayres Sensory Integration Intervention – 30 hours; Susan Smith Roley, OTD, OTR, FAOTA, and Aja Roley, dezembro 2019
+                        <li>Workshop Hands-On: Materiais e Modelos de Motor Fino para Intervenção na Escrita com Susan
+                            Trautman MA, OTR/L SWC e Lisa Johnson MA, OTR/L, 2018</li>
+                        <li>Certificate Program in Ayres Sensory Integration – Module 1: Neuroscience and Knowledge and
+                            Skill in Ayre Sensory Integration Theory Introductor – 42 hours - Rosean Schaaf, PHD,
+                            OTR/L.FAOTA and Susan Smith Roley, OTD, OTR, FAOTA, março 2019</li>
+                        <li>Certificate Program in Ayres Sensory Integration – Module 2:Comprehensive Assessment in ASI
+                            – 30 hours; Rosean Schaaf, PHD, OTR/L.FAOTA and Susan Smith Roley, OTD, OTR, FAOTA, maio
+                            2019</li>
+                        <li>Certificate Program in Ayres Sensory Integration – Module 3:Comprehensive Assessment in ASI
+                            Theory – 32 hours; Rosean Schaaf, PHD, OTR/L.FAOTA and Susan Smith Roley, OTD, OTR, FAOTA,
+                            junho 2019</li>
+                        <li>Certificate Program in Ayres Sensory Integration – Module 4:Clinical Reasoning in Ayres
+                            Sensory Integration Theory Introductor – 35 hours; Rosean Schaaf, PHD, OTR/L.FAOTA and Susan
+                            Smith Roley, OTD, OTR, FAOTA, novembro 2019</li>
+                        <li>Certificate Program in Ayres Sensory Integration – Module 5:Evidence Based Intervention
+                            Including Fidelity to Intervention – 30 hours; Rosean Schaaf, PHD, OTR/L.FAOTA and Susan
+                            Smith Roley, OTD, OTR, FAOTA, novembro 2019</li>
+                        <li>Certificate Program in Ayres Sensory Integration – Module 6:Ayres Sensory Integration
+                            Intervention – 30 hours; Susan Smith Roley, OTD, OTR, FAOTA, and Aja Roley, dezembro 2019
                         </li>
                         <li>Certificate in Ayres Sensory Integration – including advanced training in the
-                            administration, scoring and interpretation of the SIPT and SPM, with introduction to the EASI – CLASI CASI #988</li>
-                        <li>Curso “Raciocínio clínico em neurociência avançada em Integração Sensorial de Ayres”, com Shelly Lane, 2020</li>
+                            administration, scoring and interpretation of the SIPT and SPM, with introduction to the
+                            EASI – CLASI CASI #988</li>
+                        <li>Curso “Raciocínio clínico em neurociência avançada em Integração Sensorial de Ayres”, com
+                            Shelly Lane, 2020</li>
                         <li>Curso “Interocepção, oitavo sentido: impacto na auto regulação”, com Kelly Mahler, 2020</li>
-                        <li>Curso “O papel do terapeuta ocupacional no tratamento de problemas de continência fecal e rejeição do uso do banheiro e problemas de recusa e seletividade alimentar na criança: introdução e tratamento, com Isabelle Beaudry Bellefeuille, 2020</li>
-                        <li>Curso “Fundamentos da Intervenção na Práxis para Crianças com Autismo”, com Teresa May – Bason, 2020</li>
-                        <li>Curso “intervenção avançada para práxis ideacional- possibilidades para funções executivas”, com Teresa May – Bason, 2020</li>
-                        <li>Curso “Raciocínio Clínico Avançado e Planejamento de Tratamento para Intervenção na Práxis”, com Teresa May – Bason, 2020</li>
-                        <li>Star Institute For Sensory Processing - Certificate of Attendence & Advanced Intensive Mentorship level 1 - Clinical Reasoning in Intervention - junho 2021</li>
+                        <li>Curso “O papel do terapeuta ocupacional no tratamento de problemas de continência fecal e
+                            rejeição do uso do banheiro e problemas de recusa e seletividade alimentar na criança:
+                            introdução e tratamento, com Isabelle Beaudry Bellefeuille, 2020</li>
+                        <li>Curso “Fundamentos da Intervenção na Práxis para Crianças com Autismo”, com Teresa May –
+                            Bason, 2020</li>
+                        <li>Curso “intervenção avançada para práxis ideacional- possibilidades para funções executivas”,
+                            com Teresa May – Bason, 2020</li>
+                        <li>Curso “Raciocínio Clínico Avançado e Planejamento de Tratamento para Intervenção na Práxis”,
+                            com Teresa May – Bason, 2020</li>
+                        <li>Star Institute For Sensory Processing - Certificate of Attendence & Advanced Intensive
+                            Mentorship level 1 - Clinical Reasoning in Intervention - junho 2021</li>
                         <li>International Ayres Sensory Integration Annual Congress, ISIC USA, 2022</li>
                         <img class="foto-prof-cert" src="./img/profissionais/Juliane.webp" alt="Foto Juliane Schritke">
                     </ul>
@@ -295,23 +324,30 @@
                         <li>Pós graduação Fonoaudiologia no espectro autista, CBI of Miami – (em andamento)</li>
                         <li>Terapeuta PROMPT II, The Prompt Institute, 2020</li>
                         <li>Aprimoramento em ABA "Análise do Comportamento Aplicada", 2018</li>
-                        <li>Cinesiotape neuromuscular aplicada a fonoaudiologia 0 Clínica de Voz - Francisco Pletesch, 2015</li>
+                        <li>Cinesiotape neuromuscular aplicada a fonoaudiologia 0 Clínica de Voz - Francisco Pletesch,
+                            2015</li>
                         <li>Capacitação em Comunicação Alternativa, 2009</li>
                         <li>Eletroestimulação Aplicada a Fonoaudiologia, Clínica de Voz- Francisco Plesch - 2017</li>
-                        <li>Apraxia de Fala na Infância – Introdutório, Intermediário, Avaliação e Modelos de Terapia – ABRAPRAXIA – Associação Brasileira de Apraxia da Fala Infantil, 2017, 2018 e 2020.</li>
+                        <li>Apraxia de Fala na Infância – Introdutório, Intermediário, Avaliação e Modelos de Terapia –
+                            ABRAPRAXIA – Associação Brasileira de Apraxia da Fala Infantil, 2017, 2018 e 2020.</li>
                         <li>Intervenções Autismo - Contribuições ABA na Inclusão Escolar, 2017.</li>
                         <li>Intervenção Fonoaudiológica no Modelo DIR/FLOORTIME, 2018</li>
                         <li>VB-MAPP e Ensino da Fala, Instituto Lahmiei, Curitiba Pr, 2018</li>
                         <li>ABLLS-R, Assessment Of Basic Language And Learning Skills – Revised, 2020</li>
                         <li>Curso Multigestos, Treino para apraxia de fala na infância, 2018</li>
-                        <li>Curso PECS Workshop básico- Nível I/ Sistema de Comunicação por trocas de figuras,  Pyramid Educacional Consultants/ EUA, 2019</li>
-                        <li>Curso Básico e Avançado em Estimulação Tátil Térmica Gustativa – Foccus - 25h/aula, 2019</li>
+                        <li>Curso PECS Workshop básico- Nível I/ Sistema de Comunicação por trocas de figuras, Pyramid
+                            Educacional Consultants/ EUA, 2019</li>
+                        <li>Curso Básico e Avançado em Estimulação Tátil Térmica Gustativa – Foccus - 25h/aula, 2019
+                        </li>
                         <li>Curso PlusHand, Curso de capacitação, 2019</li>
                         <li>Curso Avaliação Fonoaudiológica de Linguagem Infantil, Alcance Meeting - 42h/aula, 2020</li>
                         <li>VI Conferência Nacional de Apraxia de fala na Infância – ABRAPRAXIA - 2020</li>
-                        <li>Curso Online Introdução ao Método DTTC (Dynamic Temporal and Tactile Cueing) - ABRAPRAXIA, 2020</li>
-                        <li>Curso Aprimoramento em Laserterapia Aplicada a Fonoaudiologia – Amamentação, disfagia, MO, oncologia e voz -Cefac/Fonotrade, 2020 (em andamento)</li>
-                        <li>Workshop Introdutório e Avançado oficial ESDM - Modelo Denver de Intervenção Precoce, Mind Institut, 2020</li>
+                        <li>Curso Online Introdução ao Método DTTC (Dynamic Temporal and Tactile Cueing) - ABRAPRAXIA,
+                            2020</li>
+                        <li>Curso Aprimoramento em Laserterapia Aplicada a Fonoaudiologia – Amamentação, disfagia, MO,
+                            oncologia e voz -Cefac/Fonotrade, 2020 (em andamento)</li>
+                        <li>Workshop Introdutório e Avançado oficial ESDM - Modelo Denver de Intervenção Precoce, Mind
+                            Institut, 2020</li>
                         <li>Curso Pragmatic Organization Dynamic Display (PODD), 2022</li>
                         <img class="foto-prof-cert" src="./img/profissionais/Paula.webp" alt="Foto Paula Ruschmann">
                     </ul>
@@ -328,7 +364,8 @@
                         <li>Formada em Terapia Ocupacional pela Universidade Federal de Pelotas, 2022</li>
                         <li>Pós graduanda em Intervenção ABA para Autismo e Deficiência Intelectual</li>
                         <li>Cursando a Certificação Internacional em Integração Sensorial de Ayres - CLASI</li>
-                        <img class="foto-prof-cert" src="./img/profissionais/Isabella.webp" alt="Foto Isabella Rodrigues">
+                        <img class="foto-prof-cert" src="./img/profissionais/Isabella.webp"
+                            alt="Foto Isabella Rodrigues">
                     </ul>
                 </div>
             </div>
@@ -341,9 +378,11 @@
                     <h2 class="certificado font-1-xl">Certificados</h2>
                     <ul>
                         <li>Graduada em Psicologia pelo Centro Universitário de Brasília, 2010</li>
-                        <li>Especialista em Intervenção ABA para Autismo e Deficiência Intelectual pelo CBI of Miami</li>
+                        <li>Especialista em Intervenção ABA para Autismo e Deficiência Intelectual pelo CBI of Miami
+                        </li>
                         <li>Especialista em Psicoterapia Cognitivo Comportamental pelo Cognitivo</li>
-                        <li>Formação em Terapia Analítico Comportamental pelo Instituto São Paulo de Análise do Comportamento</li>
+                        <li>Formação em Terapia Analítico Comportamental pelo Instituto São Paulo de Análise do
+                            Comportamento</li>
                         <img class="foto-prof-cert" src="./img/profissionais/Lucia.webp" alt="Foto Lucia Zanetti">
                     </ul>
                 </div>
@@ -358,9 +397,12 @@
                     <ul>
                         <li>Pedagoga pela UNIVALI/BC</li>
                         <li>Pós-graduada em Alfabetização e Letramento pela Faculdade Dom Alberto</li>
-                        <li>Pós-graduada em Contação de Histórias e Literatura Infantil pela FATUM-FATEC de Curitiba</li>
+                        <li>Pós-graduada em Contação de Histórias e Literatura Infantil pela FATUM-FATEC de Curitiba
+                        </li>
                         <li>Neuropsicopedagoga pela Uniasselvi/BC (cursando)</li>
-                        <li>Professora alfabetizadora, apaixonada pelo que faz, trabalha com séries iniciais na Rede Privada de BC e faz atendimentos de Apoio Pedagógico Individualizado com foco em dificuldades de aprendizagem e Educação Especial</li>
+                        <li>Professora alfabetizadora, apaixonada pelo que faz, trabalha com séries iniciais na Rede
+                            Privada de BC e faz atendimentos de Apoio Pedagógico Individualizado com foco em
+                            dificuldades de aprendizagem e Educação Especial</li>
                         <img class="foto-prof-cert" src="./img/profissionais/Didi.webp" alt="Foto Dionessa Bazana">
                     </ul>
                 </div>
@@ -373,14 +415,17 @@
                     <span>Nutricionista<br>CRN10-7893</span>
                     <h2 class="certificado font-1-xl">Certificados</h2>
                     <ul>
-                        <li>Nutricionista pós graduada em Nutrição da Infância e da Adolescência pela Universidade Federal de SP</li>
+                        <li>Nutricionista pós graduada em Nutrição da Infância e da Adolescência pela Universidade
+                            Federal de SP</li>
                         <li>Formada pela Universidade Municipal de São Caetano do Sul</li>
-                        <li>Pós graduada pela Universidade Federal de São Paulo - Unifesp em nutrição aplicada a infância e a adolescência</li>
+                        <li>Pós graduada pela Universidade Federal de São Paulo - Unifesp em nutrição aplicada a
+                            infância e a adolescência</li>
                         <li>Experiência de 17 anos em atendimento ambulatorial de crianças e adolescentes</li>
                         <li>Proprietária da empresa de consultoria em nutrição Madame Nutrilda</li>
                         <li>Nutricionista AMA Litoral unidade Balneário Camboriú e Itapema</li>
                         <li>Nutricionista Clínica Leme - atendimento nutricional para crianças e adolescentes</li>
-                        <li>Sou mãe de dois sapecas e comilões, Luiza de 10 anos e João de 5 anos. Mãe realizada e profissional feliz</li>
+                        <li>Sou mãe de dois sapecas e comilões, Luiza de 10 anos e João de 5 anos. Mãe realizada e
+                            profissional feliz</li>
                         <img class="foto-prof-cert" src="./img/profissionais/Priscila.webp" alt="Foto Paula Ruschmann">
                     </ul>
                 </div>

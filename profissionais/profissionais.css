@@ -23,6 +23,16 @@
     cursor: pointer;
 }
 
+.profissional:hover {
+    transition: .4s;
+    border: 1px solid var(--cor-4);
+}
+.profissional:hover img {
+    transition: .4s;
+    filter: grayscale(25%);
+    border: 3px solid #d2e9e8;
+}
+
 
 .nome{
     background: rgb(210, 233, 232,0.5);
@@ -40,12 +50,6 @@
     border: 3px solid white;
     filter: grayscale(50%);
 
-}
-
-.foto-prof:hover {
-    transition: .4s;
-    filter: none;
-    border: 3px solid #d2e9e8;
 }
 
 
@@ -96,6 +100,21 @@
     max-height: 500px;
     overflow: scroll;
     overflow-x: hidden;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.curriculo ul::-webkit-scrollbar {
+    width: .5em;
+}
+ 
+.curriculo ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.8);
+}
+ 
+.curriculo ul::-webkit-scrollbar-thumb {
+  background-color: var(--cor-5);
+  border-radius: 3px;
 }
 
 .foto-prof-cert{
@@ -103,5 +122,28 @@
     top: 1.5rem;
     right: 70px;
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.055);
+}
+
+
+.profissional:hover span {
+    visibility: hidden;
+    position: relative;
+}
+
+.profissional:hover span:first-child:after {
+    visibility: visible;
+    content: "Clique para ver o currículo";
+    text-align: center;
+    position: absolute;
+    width: 250px;
+    font-size: 1rem;
+    top: 0;
+    left: 0;
+}
+
+.profissional span {
+    display: block;
+    text-align: center;
+    width: 250px;
 }
 
