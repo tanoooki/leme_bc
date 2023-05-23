@@ -5,3 +5,66 @@
 .contato img {
     width: 56px;
 }
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.form label {
+    display: block;
+    font: 500 1rem/1.5 "Poppins", sans-serif;
+    margin-bottom: 4px;
+}
+
+.form .col-2 {
+    grid-column: span 2;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea,
+.form input[type="tel"] {
+    font: 400 .75rem/1.5 "Roboto", sans-serif;
+    background: #ffffff;
+    border: 1px solid var(--cor-);
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: var(--cor-p3);
+    background: var(--cor-1);
+    box-shadow: 0 0 0 2px #fea;
+}
+
+@media (max-width: 600px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+    .form .col-2 {
+        grid-column: 1;
+    }
+}
+
+textarea {
+    font-size: 1.2rem;
+}
+
+.btn {
+    max-width: 150px;
+    padding: 12px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--cor-2);
+    background: whitesmoke;
+    display: grid;
+    cursor: pointer;
+}
