@@ -88,3 +88,9 @@ body::-webkit-scrollbar-thumb {
     padding-right:  20px;
     
 }
+
+@media (max-width:600px) {
+    .modal_background {
+    max-width: 90vw;
+    }
+}

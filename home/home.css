@@ -75,6 +75,7 @@ body {
 
 .imagens_modal img {
     border-radius: 8px;
+    max-width: 80vw;
 }
 
 .imagens_modal li {
