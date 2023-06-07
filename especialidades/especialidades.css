@@ -98,5 +98,12 @@
     }
     .especialidades p {
         max-width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .especialidades p {
+        font-size: .75rem;
     }
 }
