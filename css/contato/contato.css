@@ -1,11 +1,3 @@
-.contato {
-    display: grid;
-}
-
-.contato img {
-    width: 56px;
-}
-
 .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
